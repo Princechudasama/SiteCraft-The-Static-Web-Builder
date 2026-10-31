@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato Inspired Food Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Zomato_logo.svg/2560px-Zomato_logo.svg.png" alt="Zomato Logo" />
+            </a>
+            <div class="nav-actions">
+                <div class="location-selector" id="locationSelector">
+                    <span class="icon">📍</span>
+                    <span class="location-text">Select location</span>
+                    <span class="arrow">▼</span>
+                    <div class="location-dropdown" id="locationDropdown">
+                        <input type="text" placeholder="Search city" id="citySearch" />
+                        <ul>
+                            <li>New York, USA</li>
+                            <li>London, UK</li>
+                            <li>Delhi, India</li>
+                            <li>Mumbai, India</li>
+                            <li>Sydney, Australia</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="btn login-btn">Login</button>
+                <button class="btn signup-btn">Sign up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Delicious food, delivered fast</h1>
+            <p>Explore the best restaurants, cafes and bars near you.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for dishes or restaurants..." id="searchInput" />
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="section categories">
+        <div class="container">
+            <h2>Popular categories</h2>
+            <div class="cards-grid">
+                <div class="card category-card">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=60" alt="Pizza" />
+                    <span>Pizza</span>
+                </div>
+                <div class="card category-card">
+                    <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=400&q=60" alt="Burgers" />
+                    <span>Burgers</span>
+                </div>
+                <div class="card category-card">
+                    <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb35?auto=format&fit=crop&w=400&q=60" alt="Sushi" />
+                    <span>Sushi</span>
+                </div>
+                <div class="card category-card">
+                    <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=400&q=60" alt="Desserts" />
+                    <span>Desserts</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Restaurants -->
+    <section class="section restaurants">
+        <div class="container">
+            <h2>Top restaurants</h2>
+            <div class="cards-grid">
+                <!-- Example restaurant card -->
+                <div class="card restaurant-card">
+                    <img src="https://images.unsplash.com/photo-1555992336-03a23c2e4c2b?auto=format&fit=crop&w=600&q=60" alt="Restaurant 1" />
+                    <div class="card-body">
+                        <h3>Spice Junction</h3>
+                        <p class="rating">⭐ 4.5 • 30 min • <span class="offer">Free Delivery</span></p>
+                    </div>
+                </div>
+                <div class="card restaurant-card">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=60" alt="Restaurant 2" />
+                    <div class="card-body">
+                        <h3>Urban Bites</h3>
+                        <p class="rating">⭐ 4.2 • 25 min • <span class="offer">20% Off</span></p>
+                    </div>
+                </div>
+                <div class="card restaurant-card">
+                    <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=600&q=60" alt="Restaurant 3" />
+                    <div class="card-body">
+                        <h3>Green Garden</h3>
+                        <p class="rating">⭐ 4.7 • 35 min • <span class="offer">Free Desserts</span></p>
+                    </div>
+                </div>
+                <div class="card restaurant-card">
+                    <img src="https://images.unsplash.com/photo-1543778501-4a4a2e9b0cfa?auto=format&fit=crop&w=600&q=60" alt="Restaurant 4" />
+                    <div class="card-body">
+                        <h3>Seafood Delight</h3>
+                        <p class="rating">⭐ 4.6 • 40 min • <span class="offer">Free Drink</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Dishes -->
+    <section class="section trending">
+        <div class="container">
+            <h2>Trending dishes</h2>
+            <div class="cards-grid">
+                <div class="card dish-card">
+                    <img src="https://images.unsplash.com/photo-1601050692648-6e3c7c3e4f1b?auto=format&fit=crop&w=400&q=60" alt="Pasta" />
+                    <span>Pasta Carbonara</span>
+                </div>
+                <div class="card dish-card">
+                    <img src="https://images.unsplash.com/photo-1604908177525-9c5e9e8e7e84?auto=format&fit=crop&w=400&q=60" alt="Tacos" />
+                    <span>Fish Tacos</span>
+                </div>
+                <div class="card dish-card">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400&q=60" alt="Ramen" />
+                    <span>Shoyu Ramen</span>
+                </div>
+                <div class="card dish-card">
+                    <img src="https://images.unsplash.com/photo-1589308078057-6f4a9f5c5c01?auto=format&fit=crop&w=400&q=60" alt="Cheesecake" />
+                    <span>New York Cheesecake</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Banner -->
+    <section class="promo-banner">
+        <div class="container promo-content">
+            <h2>Get 30% off on your first order!</h2>
+            <p>Use code <strong>WELCOME30</strong> at checkout.</p>
+            <button class="btn promo-btn">Order Now</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Zomato Inspired. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
